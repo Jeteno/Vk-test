@@ -1,7 +1,6 @@
 @import "variables.scss";
 
 .wrapper {
-   height: 100%;
    @extend %flexCenter;
    .popup__open {
       padding: 16px;
@@ -25,6 +24,7 @@
       }
    }
    .popup__page {
+      margin: 20px 0 20px;
       .popup__conteiner {
          @extend %flexCenter;
          flex-direction: column;
@@ -37,8 +37,8 @@
             .close__btn {
                cursor: pointer; 
                position: absolute; 
-               top: 20px; 
-               left: 92%;
+               top: 25px; 
+               left: 90%;
                &::after {
                   content: ""; 
                   position: absolute; 

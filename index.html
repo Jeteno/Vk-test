@@ -11,11 +11,13 @@
 <body>
    <div class="wrapper">
       <div class="popup__open" id="popup__open">
-         <h2 class="popup__title-open">
-            Хочешь забронировать переговорную? Тогда жми на кнопку
-         </h2>
-         <div class="popup__button-open">
-            <button class="popup__btn-open" style="border-bottom: 4px solid #707981;" onclick="openPopup()">Забронировать</button>
+         <div class="popup__open-body">
+            <h2 class="popup__title-open">
+               Хочешь забронировать переговорную? Тогда жми на кнопку
+            </h2>
+            <div class="popup__button-open">
+               <button class="popup__btn-open" style="border-bottom: 4px solid #707981;" onclick="openPopup()">Забронировать</button>
+            </div>   
          </div>
       </div>
       <div class="popup__page page display" id="popup">
@@ -87,7 +89,12 @@
                </div>
                <div class="popup__group">
                   <label class="popup__label" for="date">Дата бронирования: </label>
-                  <input class="popup__control" type="datetime-local" id="date" name="date" required/>
+                  <input class="popup__control" type="date" id="date" name="date" required/>
+               </div>
+               <div class="popup__group">
+                  <label class="popup__label" for="time">Время бронирования (с ... и до ...): </label>
+                  <input class="popup__control" type="time" id="timeWith" name="timeWith" required/>
+                  <input class="popup__control" type="time" id="timeBefor" name="timeBefor" required/>
                </div>
                <div class="popup-group">
                   <label class="popup__label" for="text">Оставьте Ваши пожелания, пожалуйста</label>
