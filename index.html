@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vk test</title>
+   <link href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto&amp;subset=cyrillic" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="wrapper">
+      <div class="popup__open" id="popup__open">
+         <h2 class="popup__title-open">
+            Хочешь забронировать переговорную? Тогда жми на кнопку
+         </h2>
+         <div class="popup__button-open">
+            <button class="popup__btn-open" style="border-bottom: 4px solid #707981;" onclick="openPopup()">Забронировать</button>
+         </div>
+      </div>
+      <div class="popup__page page display" id="popup">
+         <div class="popup__conteiner conteiner">
+            <div class="close">
+               <button class="close__btn" onclick="closePopup()"></button>
+            </div>
+            <form class="popup__form" name="publish" action="" >
+               <div class="form-left-decoration"></div>
+               <div class="form-right-decoration"></div>
+               <div class="circle"></div>
+               <h1 class="popup__title">
+                  Забронировать переговорную
+               </h1>
+               <div class="popup__group">
+                  <label class="popup__label" for="tower">Выберите, пожалуйста, башню</label>
+                  <select class="popup__control" id="tower" name="tower" required>
+                     <option selected='' value=''></option>
+                     <option>А</option>
+                     <option>Б</option>
+                  </select>
+               </div>
+               <div class="popup__group">
+                  <label class="popup__label" for="floor">Выберите, пожалуйста, этаж</label>
+                  <select class="popup__control" id="floor" name="floor" required>
+                     <option selected='' value=''></option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                     <option>6</option>
+                     <option>7</option>
+                     <option>8</option>
+                     <option>9</option>
+                     <option>10</option>
+                     <option>11</option>
+                     <option>12</option>
+                     <option>13</option>
+                     <option>14</option>
+                     <option>15</option>
+                     <option>16</option>
+                     <option>17</option>
+                     <option>18</option>
+                     <option>19</option>
+                     <option>20</option>
+                     <option>21</option>
+                     <option>22</option>
+                     <option>23</option>
+                     <option>24</option>
+                     <option>25</option>
+                     <option>26</option>
+                     <option>27</option>
+                  </select>
+               </div>
+               <div class="popup__group">
+                  <label class="popup__label" for="meetingRoom">Выберите, пожалуйста, переговорную</label>
+                  <select class="popup__control" id="meetingRoom" name="meetingRoom" required>
+                     <option selected='' value=''></option>
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                     <option>6</option>
+                     <option>7</option>
+                     <option>8</option>
+                     <option>9</option>
+                     <option>10</option>
+                  </select>
+               </div>
+               <div class="popup__group">
+                  <label class="popup__label" for="date">Дата бронирования: </label>
+                  <input class="popup__control" type="datetime-local" id="date" name="date" required/>
+               </div>
+               <div class="popup-group">
+                  <label class="popup__label" for="text">Оставьте Ваши пожелания, пожалуйста</label>
+                  <input class="popup__control" type="text" id="popup__text" name="message" required />
+               </div>
+               <button type="submit" class="popup__btn btn" id="sendButton" style="border-bottom: 4px solid #d87d56;" onclick="changeText(this)" data-show="true">Отправить</button>
+               <button type="submit" class="popup__btn btn" id="clearButton" style="border-bottom: 4px solid #d87d56;" onclick="clearInput()">Очистить</button>
+            </form>
+         </div>
+      </div>
+   </div>
+   <script src="script/script.js"></script>
+</body>
+</html>

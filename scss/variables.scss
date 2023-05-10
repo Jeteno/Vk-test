@@ -1,0 +1,24 @@
+$font-family: 'Roboto', sans-serif;
+$color: #707981;
+
+%Roboto__title {
+   font-family: $font-family;
+   color: $color;
+   font-weight: 500;
+   line-height: 40px;
+   font-size: 24px;
+}
+
+%Roboto__text {
+   font-family: $font-family;
+   color: $color;
+   font-weight: 500;
+   line-height: 40px;
+   font-size: 14px;
+}
+
+%flexCenter{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
